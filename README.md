@@ -22,3 +22,31 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+
+## monthlyテーブル
+
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+
+### Association
+has_many : year
+
+
+## yearテーブル
+
+| Column       | Type   | Options                   |
+| ------------ | ------ | ------------------------- |
+| spending_nam | string | null: false               |
+| spending_nam | string | null: false               |
+| spending_nam | string | null: false               |
+| spending_nam | string | null: false               |
+| spending_nam | string | null: false               |
+| spending_nam | string | null: false               |
+| spending_nam | string | null: false               |
+
+### Association
+belongs_to : monthly
+
